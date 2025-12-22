@@ -32,16 +32,12 @@ export default {
           password: this.password 
         });
         
-        // 1. Очищаємо старі дані
         localStorage.clear();
         
-        // 2. Зберігаємо новий актуальний токен
         localStorage.setItem('token', response.data.token);
         
-        // 3. Переходимо на сторінку нотаток
         await this.$router.push('/notes');
         
-        // 4. Перезавантажуємо сторінку для оновлення стану додатка
         window.location.reload();
       } catch (err) {
         console.error("Login error:", err);
