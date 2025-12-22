@@ -39,8 +39,6 @@ export default {
   name: 'About',
   methods: {
     goBack() {
-      // Повертає користувача на ту сторінку, з якої він прийшов 
-      // (або на Notes, або на Login/Register)
       this.$router.back();
     }
   }
