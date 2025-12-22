@@ -67,7 +67,6 @@ export default {
     },
     async createNote() {
       try {
-        // Відправляємо чітко title та content
         await api.post('/notes', {
           title: this.currentNote.title,
           content: this.currentNote.content
