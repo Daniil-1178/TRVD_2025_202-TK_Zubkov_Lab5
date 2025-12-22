@@ -67,7 +67,7 @@ export default {
 </script>
 
 <style scoped>
-/* Залишаємо тільки специфічні для цієї сторінки стилі */
+/* Залишаються тільки специфічні для цієї сторінки стилі */
 .error-msg { 
   color: #ff4d4d; 
   margin-bottom: 10px; 
